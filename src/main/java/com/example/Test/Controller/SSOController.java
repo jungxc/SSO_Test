@@ -40,9 +40,9 @@ public class SSOController {
         ResponseData data = new ResponseData();
         System.out.println(SSORequests);
         try {
-            SSOModel ssoModel = ssoService.createSSOModel(SSORequests);
-            data.setUserId(ssoModel.getUserid());
-            data.setTokenId(ssoModel.getTokenid());
+           // SSOModel ssoModel = ssoService.createSSOModel(SSORequests);
+         // data.setUserId(ssoModel.getUserId());
+         //   data.setTokenId(ssoModel.getTokenid());
            // response.setResponseCode(HttpStatus.OK.value());
             response.setResponseMessage("ทำรายการเรียบร้อย");
             response.setResponseData(data);
@@ -50,8 +50,8 @@ public class SSOController {
         } catch (Exception e) {
           //  response.setResponseCode(HttpStatus.BAD_REQUEST.value());
             response.setResponseMessage("ไม่สามารถบันทึกข้อมูลลงฐานข้อมูลได้");
-            data.setUserId(SSORequests.getUserid());
-            data.setTokenId(" ");
+          //  data.setUserId(SSORequests.getUserId());
+        //    data.setTokenId(" ");
             response.setResponseData(data);
             return ResponseEntity.internalServerError().body(response);
         }

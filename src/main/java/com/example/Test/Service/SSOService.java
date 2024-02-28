@@ -63,7 +63,7 @@ public class SSOService {
                 .systemprivileges(createSSORequests.getSystemPrivileges())
                 .systemusergroup(createSSORequests.getSystemUserGroup())
                 .systemlocationgroup(createSSORequests.getSystemLocationGroup())
-                .userid(createSSORequests.getUserid())
+                .userid(createSSORequests.getUserId())
                 .userfullname(createSSORequests.getUserFullName())
                 .userrdofficecode(createSSORequests.getUserRdOfficeCode())
                 .userofficecode(createSSORequests.getUserOfficeCode())
@@ -79,7 +79,7 @@ public class SSOService {
                     System.out.println("systemPrivileges: " + createSSORequests.getSystemPrivileges());
                     System.out.println("systemUserGroup: " + createSSORequests.getSystemUserGroup());
                     System.out.println("systemLocationGroup: " + createSSORequests.getSystemLocationGroup());
-                    System.out.println("userid: " + createSSORequests.getUserid());
+                    System.out.println("userid: " + createSSORequests.getUserId());
                     System.out.println("userFullName: " + createSSORequests.getUserFullName());
                     System.out.println("userRdOfficeCode: " + createSSORequests.getUserRdOfficeCode());
                     System.out.println("userOfficeCode: " + createSSORequests.getUserOfficeCode());

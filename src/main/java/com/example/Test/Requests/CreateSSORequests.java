@@ -14,7 +14,7 @@ public class CreateSSORequests {
     String systemPrivileges;
     String systemUserGroup;
     String systemLocationGroup;
-    String userid;
+    String userId;
     String userFullName;
     String userRdOfficeCode;
     String userOfficeCode;

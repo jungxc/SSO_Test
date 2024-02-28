@@ -12,6 +12,8 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Getter
+@Setter
 @Table(name = "sso_user_test")
 public class SSOModel {
 
@@ -96,11 +98,11 @@ public class SSOModel {
         this.systemlocationgroup = systemlocationgroup;
     }
 
-    public String getUserid() {
+    public String getUserId() {
         return this.userid;
     }
 
-    public void setUserid(String userid) {
+    public void setUserId(String userid) {
         this.userid = userid;
     }
 
